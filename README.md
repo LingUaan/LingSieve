@@ -35,8 +35,8 @@ Usage
 
   Open a Command Prompt and run:
 
-  - LingSieve -verbose -bench		- // - to get on overview of the capabilities of your graphics card
-  - LingSieve				- // - Start LDT from 0 or from the last entry of file Result.txt if there is any
+  - LingSieve -verbose -bench		// - to get on overview of the capabilities of your graphics card
+  - LingSieve				             // - Start LDT from 0 or from the last entry of file Result.txt if there is any
   - LingSieve 0			          // Count the primes from 0 .. 10^11
   - LingSieve 0 -s1		        // Count the primes from 0 .. 10^9
   - LingSieve 0 -s10		      // Count the primes from 0 .. 10^10
