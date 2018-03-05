@@ -86,7 +86,7 @@ Examples            | Comment
   Status
   ======
   
-  I've sieved 6,8x10^16 numbers in various ranges without any errors, that is 6.800.000 cycles. Once I run it for about 60 hours continuously without any problems, it just works as it is supposed to.
+  I've sieved 6,8x10^16 numbers in various ranges without any errors, that is 6.800.000 cycles. Once I run it for about 60 hours continuously without any problems, it just works as it is supposed to. The results were compared with the extensive prime sieve tables of Tomás Oliveira e Silva.
   
   
   Basic development is finsished.
