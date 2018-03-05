@@ -22,7 +22,7 @@ Prerequiste
  - NVIDIA graphics card - works best with compute capabilities 3.7, 5.2, 6.1 and 7.0
    because of available quantities of registers and shared memory
  - a 64-bit host application and non-embedded operating system (Linux, Windows, macOS)
- - Mmemory requirement: 1832MB .. 2412MB depending on the range to be sieved
+ - GPU Mmemory requirement: 1832MB .. 2412MB depending on the range to be sieved
 
 
 Usage
@@ -35,8 +35,8 @@ Usage
 
   Open a Command Prompt and run:
 
-  - LingSieve -verbose -bench  // to get on overview of the capabilities of your graphics card
-  - LingSieve                  // Start LDT from 0 or from the last entry of file Result.txt if there is any
+  - LingSieve -verbose -bench		- // - to get on overview of the capabilities of your graphics card
+  - LingSieve				- // - Start LDT from 0 or from the last entry of file Result.txt if there is any
   - LingSieve 0			          // Count the primes from 0 .. 10^11
   - LingSieve 0 -s1		        // Count the primes from 0 .. 10^9
   - LingSieve 0 -s10		      // Count the primes from 0 .. 10^10
