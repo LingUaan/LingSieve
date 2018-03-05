@@ -24,7 +24,7 @@ Benchmark and HW Scaling
 The GPU HW will scale the program accordingly, there is no need to configure anything.
 
 
-Range | Count | GTX 1080 TI | GTX 1080 | GTX 1070 | GTX 1060 | GTX 1050
+Range | Count | GTX 1080 Ti | GTX 1080 | GTX 1070 | GTX 1060 | GTX 1050
 ----- | ----- | ----------- | -------- | -------- | -------- | --------
 0 … 10^11	| 4.118.054.813	| | 0,60 s
 0 … 10^12	| 37.607.912.018	| | 8,31 s
@@ -43,6 +43,12 @@ Range | Count | GTX 1080 TI | GTX 1080 | GTX 1070 | GTX 1060 | GTX 1050
 1,8x10^19 + 10^11	| 2.255.482.326	| | 2,97 s
 
 This is the fastest implementation of the sieve of Eratosthenes on a GPU to the best of my knowledge.
+
+
+Screenshoots
+============
+
+
 
 Prerequiste
 ===========
@@ -86,7 +92,7 @@ Examples            | Comment
   Status
   ======
   
-  I've sieved 6,8x10^16 numbers in various ranges without any errors, that is 6.800.000 cycles. Once I run it for about 60 hours continuously without any problems, it just works as it is supposed to. The results were compared with the extensive prime sieve tables of Tomás Oliveira e Silva.
+  I've sieved 6,8x10^16 numbers in various ranges without any errors, that is 68.000.000 cycles. Once I run it for more than 60 hours continuously without any problems, it just works as it is supposed to. The results were compared with the extensive prime sieve tables of Tomás Oliveira e Silva.
   
   
   Basic development is finsished.
