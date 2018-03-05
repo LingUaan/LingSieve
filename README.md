@@ -8,24 +8,15 @@ Key components used to make it really fast:
  - bucket concept
  - wheel concept
  - compact layout of primes to be sieved - one odd number per bit
- - reuse all data structurs again and again - no malloc, no free hence no data leaks and init time can be neglected
+ - reuse all data structurs again and again - no malloc, no free hence no memory leaks and init time can be neglected
  - different sieving method for small, medium, large and very large numbers
 
 
+
 The program LingSieve counts primes and is designed for long duration tests (LDT), to handle large quantities of data. That is what GPU computing is all about. It makes no sense to to use the GPU with small sieve jobs - programs running on CPU are the right joice for this kind of jobs.
-The granularity is 1.000.000.000 = 10^9 = 1" = 1 cycle, that is the smallest quantitie to be sieved. It can be startet with multiples of 1", and the sieve width is also in multiples of 1". It can sieve short of 2^64 (1,8446744x10^19)
+The granularity is 1.000.000.000 = 10^9 = 1" = 1 cycle, that is the smallest quantitie to be sieved. It can be startet with multiples of 1", and the sieve width is also in multiples of 1". It can sieve short of 2^64 (1,8446744x10^19).
 
 
-
-Prerequiste
-===========
-
- - NVIDIA graphics card - works best with compute capabilities 3.7, 5.2, 6.1 and 7.0
-   because of available quantities of registers and shared memory
- - a 64-bit host application and non-embedded operating system (Linux, Windows, macOS)
- - GPU memory requirement: 1832MB .. 2412MB depending on the range to be sieved
- 
- 
  
 Benchmark and HW Scaling
 ========================
@@ -51,7 +42,17 @@ Range | Count | GTX 1080 TI | GTX 1080 | GTX 1070 | GTX 1060 | GTX 1050
 1,6x10^19 + 10^11	| 2.261.487.864	| | 2,90 s
 1,8x10^19 + 10^11	| 2.255.482.326	| | 2,97 s
 
+This is the fastest implementation of the sieve of Eratosthenes on a GPU to the best of my knowledge.
 
+Prerequiste
+===========
+
+ - NVIDIA graphics card - works best with compute capabilities 3.7, 5.2, 6.1 and 7.0
+   because of available quantities of registers and shared memory
+ - a 64-bit host application and non-embedded operating system (Linux, Windows, macOS)
+ - GPU memory requirement: 1832MB .. 2412MB depending on the range to be sieved
+ 
+ 
 Binary
 ======
 The available binaries have been compiled for 64bit Windows and NVIDIA GPUs with compute capabilities 3.7 and higher.
