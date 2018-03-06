@@ -45,11 +45,6 @@ Range | Count | GTX 1080 Ti | GTX 1080 | GTX 1070 | GTX 1060 | GTX 1050
 This is the fastest implementation of the sieve of Eratosthenes on a GPU to the best of my knowledge.
 
 
-Screenshoots
-============
-
-
-
 Prerequiste
 ===========
 
