@@ -13,7 +13,7 @@ Key components used to make it really fast:
 
 
 
-The program LingSieve counts primes and is designed for long duration tests (LDT), to handle large quantities of data. That is what GPU computing is all about. It makes no sense to to use the GPU with small sieve jobs - programs running on CPU are the right joice for this kind of jobs.
+The program LingSieve counts primes and is designed for long duration tests (LDT), to handle large quantities of data. That is what GPU computing is all about. It makes no sense to to use the GPU for small sieve jobs - programs running on CPU are the right joice for this kind of jobs.
 The granularity is 1.000.000.000 = 10^9 = 1" = 1 cycle, that is the smallest quantitie to be sieved. It can be startet with multiples of 1", and the sieve width is also in multiples of 1". It can sieve short of 2^64 (1,8446744x10^19).
 
 
@@ -26,21 +26,21 @@ The GPU HW will scale the program accordingly, there is no need to configure any
 
 Range | Count | GTX 1080 Ti | GTX 1080 | GTX 1070 | GTX 1060 | GTX 1050
 ----- | ----- | ----------- | -------- | -------- | -------- | --------
-0 … 10^11	| 4.118.054.813	| | 0,60 s
-0 … 10^12	| 37.607.912.018	| | 8,31 s
-0 … 10^13	| 346.065.536.839	| | 103 s
-0 … 10^14	| 3.204.941.750.802	| | 1231 s
-10^12 + 10^11	| 3.612.791.400	| | 0,91 s
-10^13 + 10^11	| 3.340.141.707	| | 1,08 s
-10^14 + 10^11	| 3.102.063.927	| | 1,26 s
-10^15 + 10^11	| 2.895.317.534	| | 1,44 s
-10^16 + 10^11	| 2.714.336.584	| | 1,62 s
-10^17 + 10^11	| 2.554.712.095	| | 1,82 s
-10^18 + 10^11	| 2.412.731.214	| | 2,09 s
-10^19 + 10^11	| 2.285.693.139	| | 2,68 s
-1,4x10^19 + 10^11	| 2.268.304.926	| | 2,86 s
-1,6x10^19 + 10^11	| 2.261.487.864	| | 2,90 s
-1,8x10^19 + 10^11	| 2.255.482.326	| | 2,97 s
+0 … 10^11	| 4.118.054.813	| | 0,60s
+0 … 10^12	| 37.607.912.018	| | 8,31s
+0 … 10^13	| 346.065.536.839	| | 103s
+0 … 10^14	| 3.204.941.750.802	| | 1231s
+10^12 + 10^11	| 3.612.791.400	| | 0,91s
+10^13 + 10^11	| 3.340.141.707	| | 1,08s
+10^14 + 10^11	| 3.102.063.927	| | 1,26s
+10^15 + 10^11	| 2.895.317.534	| | 1,44s
+10^16 + 10^11	| 2.714.336.584	| | 1,62s
+10^17 + 10^11	| 2.554.712.095	| | 1,82s
+10^18 + 10^11	| 2.412.731.214	| | 2,09s
+10^19 + 10^11	| 2.285.693.139	| | 2,68s
+1,4x10^19 + 10^11	| 2.268.304.926	| | 2,86s
+1,6x10^19 + 10^11	| 2.261.487.864	| | 2,90s
+1,8x10^19 + 10^11	| 2.255.482.326	| | 2,97s
 
 This is the fastest implementation of the sieve of Eratosthenes on a GPU to the best of my knowledge.
 
@@ -56,7 +56,7 @@ Prerequiste
  - NVIDIA graphics card - works best with compute capabilities 3.7, 5.2, 6.1 and 7.0
    because of available quantities of registers and shared memory
  - a 64-bit host application and non-embedded operating system (Linux, Windows, macOS)
- - GPU memory requirement: 1832MB .. 2412MB depending on the range to be sieved
+ - GPU memory: 1832MB .. 2412MB depending on the range to be sieved
  
  
 Binary
