@@ -8,13 +8,13 @@ Key components used to make it really fast:
  - bucket concept
  - wheel concept
  - compact layout of primes to be sieved - one odd number per bit
- - reuse all data structurs again and again - no malloc, no free hence no memory leaks and init time can be neglected
+ - reuse all data structures again and again - no malloc, no free hence no memory leaks and init time can be neglected
  - different sieving method for small, medium, large and very large numbers
 
 
 
-The program LingSieve counts primes and is designed for long duration tests (LDT), to handle large quantities of data. That is what GPU computing is all about. It makes no sense to to use the GPU for small sieve jobs - programs running on CPU are the right joice for this kind of jobs.
-The granularity is 1.000.000.000 = 10^9 = 1" = 1 cycle, that is the smallest quantitie to be sieved. It can be startet with multiples of 1", and the sieve width is also in multiples of 1". It can sieve short of 2^64 (1,8446744x10^19).
+The program LingSieve counts primes and is designed for long duration tests (LDT), to handle large quantities of data. That is what GPU computing is all about. It makes no sense to to use the GPU for small sieve jobs.
+The granularity is 1.000.000.000 = 10^9 = 1" = 1 cycle, that is the smallest quantity to be sieved. It can be started with multiples of 1", and the sieve width is also in multiples of 1". It can sieve short of 2^64 (1,8446744x10^19).
 
 
  
@@ -45,8 +45,8 @@ Range | Count | GTX 1080 Ti | GTX 1080 | GTX 1070 | GTX 1060 | GTX 1050
 This is the fastest implementation of the sieve of Eratosthenes on a GPU to the best of my knowledge.
 
 
-Prerequiste
-===========
+Prerequisite
+============
 
  - NVIDIA graphics card - works best with compute capabilities 3.7, 5.2, 6.1 and 7.0
    because of available quantities of registers and shared memory
@@ -90,7 +90,7 @@ Examples            | Comment
   I've sieved 6,8x10^16 numbers in various ranges without any errors, that is 68.000.000 cycles. Once I run it for more than 60 hours continuously without any problems, it just works as it is supposed to. The results were compared with the extensive prime sieve tables of Tomás Oliveira e Silva.
   
   
-  Basic development is finsished.
+  Basic development is finished.
   I may append it with the following features in the future:
   - support of multi GPUs
   - sieve up to 10^20
