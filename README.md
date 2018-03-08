@@ -64,8 +64,8 @@ Usage
 
   Open a Command Prompt and run the program LingSieve:
   
-  1) start without parameter - it will use initial values - StartValue (0), SieveWidth (100") and start a LDT
-  2) if there is a valid Result file it will use the last entry as StartValue, SieveWidth (100") and start a LDT
+  1) start without parameter - it will use initial values - StartValue (0), segment size (100") and start a LDT
+  2) if there is a valid Result file it will use the last entry as StartValue, segment size (100") and start a LDT
   3) if there is a user input it will use it instead of 1) or 2)
 
 
