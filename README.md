@@ -9,7 +9,7 @@ Key components used to make it really fast:
  - wheel concept
  - compact layout of primes to be sieved - one odd number per bit
  - reuse all data structures again and again - no malloc, no free hence no memory leaks and init time can be neglected
- - different sieving method for small, medium, large and very large numbers
+ - different sieving method for very small, small, medium, large and very large numbers
 
 
 
