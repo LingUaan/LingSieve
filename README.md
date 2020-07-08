@@ -7,7 +7,7 @@ Key components used to make it really fast:
  - sieve in shared memory
  - bucket concept
  - wheel concept
- - compact layout of primes to be sieved - one odd number per bit
+ - compact layout of primes to be sieved - one odd number per bit - blackkey concept
  - reuse all data structures again and again - no malloc, no free hence no memory leaks and init time can be neglected
  - no bulk data transfer between CPU and GPU, only the sieve result will be transfered from GPU to CPU
  - different sieving method for very small, small, medium, large and very large numbers
@@ -49,7 +49,7 @@ This is the fastest implementation of the sieve of Eratosthenes on a GPU to the 
 Prerequisite
 ============
 
- - NVIDIA graphics card - works best with compute capabilities 3.7, 5.2, 6.1 and 7.0
+ - NVIDIA graphics card with driver >= 384.81 - works best with compute capabilities 3.7, 5.2, 6.1 and 7.0
    because of available quantities of registers and shared memory
  - a 64-bit host application and non-embedded operating system (Linux, Windows, macOS)
  - GPU memory: 1832MB .. 2412MB depending on the range to be sieved
@@ -93,6 +93,3 @@ Examples            | Comment
   
   
   Basic development is finished.
-  I may append it with the following features in the future:
-  - support of multi GPUs
-  - sieve up to 10^20
