@@ -7,7 +7,7 @@ Key components used to make it really fast:
  - sieve in shared memory
  - bucket concept
  - wheel concept
- - compact layout of primes to be sieved - one odd number per bit - blackkey concept
+ - blackkey concept - compact layout of primes to be sieved, one odd number per bit
  - reuse all data structures again and again - no malloc, no free hence no memory leaks and init time can be neglected
  - no bulk data transfer between CPU and GPU, only the sieve result will be transfered from GPU to CPU
  - different sieving method for very small, small, medium, large and very large numbers
@@ -22,26 +22,27 @@ The granularity is 1.000.000.000 = 10^9 = 1" = 1 cycle, that is the smallest qua
 Benchmark and HW Scaling
 ========================
 
-The GPU HW will scale the program accordingly, there is no need to configure anything.
+The GPU HW will scale the program accordingly, there is no need to configure anything.<br/>
+All measurements were taken with a GTX 1080
 
 
-Range | Count | GTX 1080 Ti | GTX 1080 | GTX 1070 | GTX 1060 | GTX 1050
+Range | Count | V2.1 | V2.2 | V2.3 | Vx.y | Vx.z
 ----- | ----- | ----------- | -------- | -------- | -------- | --------
-0 … 10^11	| 4.118.054.813	| | 0,60s
-0 … 10^12	| 37.607.912.018	| | 8,31s
-0 … 10^13	| 346.065.536.839	| | 103s
-0 … 10^14	| 3.204.941.750.802	| | 1231s
-10^12 + 10^11	| 3.612.791.400	| | 0,90s
-10^13 + 10^11	| 3.340.141.707	| | 1,08s
-10^14 + 10^11	| 3.102.063.927	| | 1,26s
-10^15 + 10^11	| 2.895.317.534	| | 1,44s
-10^16 + 10^11	| 2.714.336.584	| | 1,62s
-10^17 + 10^11	| 2.554.712.095	| | 1,81s
-10^18 + 10^11	| 2.412.731.214	| | 2,08s
-10^19 + 10^11	| 2.285.693.139	| | 2,64s
-1,4x10^19 + 10^11	| 2.268.304.926	| | 2,81s
-1,6x10^19 + 10^11	| 2.261.487.864	| | 2,84s
-1,8x10^19 + 10^11	| 2.255.482.326	| | 2,91s
+0 … 10^11	| 4.118.054.813	| 0,60s | 0,58s
+0 … 10^12	| 37.607.912.018	| 8,31s | 7,60s
+0 … 10^13	| 346.065.536.839	| 103s | 93,5s
+0 … 10^14	| 3.204.941.750.802	|  1231s| 1124s
+10^12 + 10^11	| 3.612.791.400	| 0,90s | 0,83s
+10^13 + 10^11	| 3.340.141.707	| 1,08s | 0,99s
+10^14 + 10^11	| 3.102.063.927	| 1,26s | 1,16s
+10^15 + 10^11	| 2.895.317.534	| 1,44s | 1,33s
+10^16 + 10^11	| 2.714.336.584	| 1,62s | 1,50s
+10^17 + 10^11	| 2.554.712.095	| 1,81s | 1,68s
+10^18 + 10^11	| 2.412.731.214	| 2,08s | 1,90s
+40^18 + 10^11	| 2.334.654.194	| 2,34s | 2,18s
+10^19 + 10^11	| 2.285.693.139	| 2,64s | 2,48s
+1,4x10^19 + 10^11	| 2.268.304.926	| 2,81s | 2,60s
+1,8x10^19 + 10^11	| 2.255.482.326	| 2,91s | 2,71s
 
 This is the fastest implementation of the sieve of Eratosthenes on a GPU to the best of my knowledge.
 
@@ -49,16 +50,19 @@ This is the fastest implementation of the sieve of Eratosthenes on a GPU to the 
 Prerequisite
 ============
 
- - NVIDIA graphics card with driver >= 384.81 - works best with compute capabilities 3.7, 5.2, 6.1 and 7.0
-   because of available quantities of registers and shared memory
+ - V2.1: NVIDIA graphics card with driver >= 384.81 
+ - V2.2: NVIDIA graphics card with driver >= 418.39 
+ - works best with compute capabilities 3.7, 5.2, 6.1 and 7.0 because of available quantities of registers and shared memory
  - a 64-bit host application and non-embedded operating system (Linux, Windows, macOS)
  - GPU memory: 1832MB .. 2412MB depending on the range to be sieved
  
  
 Binary
 ======
-The available binaries have been compiled for 64bit Windows and NVIDIA GPUs with compute capabilities 3.7 and higher.
-It has been compiled with Microsoft Visual Studio Community 2017 and NVIDIA CUDA Toolkit V9.0.
+The available binaries have been compiled for 64bit Windows and NVIDIA GPUs with compute capabilities 3.7 and higher.<br/>
+It has been compiled with Microsoft Visual Studio Community 2017 and<br/> 
+NVIDIA CUDA Toolkit V9.0 (V2.1)<br/>
+NVIDIA CUDA Toolkit V10.1 (V2.2).
 
 
 Usage
