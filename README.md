@@ -42,7 +42,7 @@ Range | Count | V2.1 | V2.2 | V2.3 | Vx.y | Vx.z
 4x10^18 + 10^11	| 2.334.654.194	| 2,34s | 2,18s
 10^19 + 10^11	| 2.285.693.139	| 2,64s | 2,48s
 1,4x10^19 + 10^11	| 2.268.304.926	| 2,81s | 2,60s
-1,8x10^19 + 10^11	| 2.255.482.326	| 2,91s | 2,71s
+1,8x10^19 + 10^11	| 2.255.482.326	| 2,91s | 2,70s
 
 This is the fastest implementation of the sieve of Eratosthenes on a GPU to the best of my knowledge.
 
