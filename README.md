@@ -50,7 +50,7 @@ This is the fastest implementation of the sieve of Eratosthenes on a GPU to the 
 Prerequisite
 ============
 
- - NVIDIA graphics card with driver >= 384.81 for V2.1 and >= 418.39 for V2.2
+ - NVIDIA graphics card with driver >= 384.81 for V2.1 and >= 398.26 for V2.2
  - works best with compute capabilities 3.7, 5.2, 6.1 and 7.0 because of available quantities of registers and shared memory
  - a 64-bit host application and non-embedded operating system (Linux, Windows, macOS)
  - GPU memory: 1832MB .. 2412MB depending on the range to be sieved
