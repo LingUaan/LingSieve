@@ -90,7 +90,7 @@ Examples            | Comment
   Status
   ======
   
-  I've sifted 6,8x10^16 numbers in various ranges without any errors, that is 68.000.000 cycles. Once I run it for more than 60 hours continuously without any problems, it just works as it is supposed to. The results were compared with the extensive prime sieve tables of Tomás Oliveira e Silva and randomly with the program primesieve64bit of Kim Walisch.
+  I've sifted 6,8x10^16 numbers in various ranges without any errors, that is 68.000.000 cycles. Once I run it for more than 60 hours continuously without any problems, it just works as it is supposed to. The results were compared with the extensive prime sieve tables of Tomás Oliveira e Silva and Jan Büthe, randomly with the program primesieve 64bit of Kim Walisch.
   
   
   Basic development is finished.
