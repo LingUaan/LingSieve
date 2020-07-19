@@ -23,7 +23,7 @@ Benchmark and HW Scaling
 ========================
 
 The GPU HW will scale the program accordingly, there is no need to configure anything.<br/>
-All measurements were taken with a NVIDIA GeForce GTX 1080 (Palit)
+All measurements were taken with a NVIDIA GeForce GTX 1080 (Palit Gamerock)
 
 
 Range | Count | V2.1 | V2.2 | V2.3 | Vx.y | Vx.z
