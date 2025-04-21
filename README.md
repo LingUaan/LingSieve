@@ -58,8 +58,9 @@ Prerequisite
  
 Binary
 ======
-The available binaries have been compiled for 64bit Windows and NVIDIA GPUs with compute capabilities 3.7 and higher.<br/>
-It has been compiled with Microsoft Visual Studio Community 2017 and NVIDIA CUDA Toolkit V9.0 for V2.1 and V9.2 for V2.2.
+The available binaries have been compiled for 64bit Windows and NVIDIA GPUs with compute capabilities 3.7 and higher. It has been compiled with Microsoft Visual Studio Community 2017 and NVIDIA CUDA Toolkit V9.0 for V2.1 and V9.2 for V2.2.<br/>
+MD5 V2.1 - 294001B4092856F5C09A7DCBB907B340<br/>
+MD% V2.2 - 4EFCB3C000C2C6ACCE0A8C27C68E274F
 
 
 Usage
