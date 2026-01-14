@@ -26,23 +26,23 @@ The GPU HW will scale the program accordingly, there is no need to configure any
 All measurements were taken with a NVIDIA GeForce GTX 1080 (Palit Gamerock)
 
 
-Range | Count | V2.1 | V2.2 | V2.3 | Vx.y | Vx.z
+Range | Count | V2.1 | V2.2 | V2.3 | V2.4 | Vx.z
 ----- | ----- | ----------- | -------- | -------- | -------- | --------
-0 … 10^11	| 4.118.054.813	| 0,60s | 0,577s
-0 … 10^12	| 37.607.912.018	| 8,31s | 7,32s
-0 … 10^13	| 346.065.536.839	| 103s | 87,2s
-0 … 10^14	| 3.204.941.750.802	|  1231s| 1019s
-10^12 + 10^11	| 3.612.791.400	| 0,90s | 0,795s
-10^13 + 10^11	| 3.340.141.707	| 1,08s | 0,919s
-10^14 + 10^11	| 3.102.063.927	| 1,26s | 1,057s
-10^15 + 10^11	| 2.895.317.534	| 1,44s | 1,235s
-10^16 + 10^11	| 2.714.336.584	| 1,62s | 1,494s
-10^17 + 10^11	| 2.554.712.095	| 1,81s | 1,664s
-10^18 + 10^11	| 2.412.731.214	| 2,08s | 1,912s
-4x10^18 + 10^11	| 2.334.654.194	| 2,34s | 2,166s
-10^19 + 10^11	| 2.285.693.139	| 2,64s | 2,518s
-1,4x10^19 + 10^11	| 2.268.304.926	| 2,81s | 2,646s
-1,8x10^19 + 10^11	| 2.255.482.326	| 2,91s | 2,747s
+0 … 10^11	| 4.118.054.813	| 0,60s | 0,577s | 0,564s
+0 … 10^12	| 37.607.912.018	| 8,31s | 7,32s | 
+0 … 10^13	| 346.065.536.839	| 103s | 87,2s |
+0 … 10^14	| 3.204.941.750.802	|  1231s| 1019s | 
+10^12 + 10^11	| 3.612.791.400	| 0,90s | 0,795s | 0,707s
+10^13 + 10^11	| 3.340.141.707	| 1,08s | 0,919s | 0,815s
+10^14 + 10^11	| 3.102.063.927	| 1,26s | 1,057s | 1,002s
+10^15 + 10^11	| 2.895.317.534	| 1,44s | 1,235s | 1,186s
+10^16 + 10^11	| 2.714.336.584	| 1,62s | 1,494s | 1,365s
+10^17 + 10^11	| 2.554.712.095	| 1,81s | 1,664s | 1,548s
+10^18 + 10^11	| 2.412.731.214	| 2,08s | 1,912s | 1,790s
+4x10^18 + 10^11	| 2.334.654.194	| 2,34s | 2,166s | 2,056s
+10^19 + 10^11	| 2.285.693.139	| 2,64s | 2,518s | 2,326s
+1,4x10^19 + 10^11	| 2.268.304.926	| 2,81s | 2,646s | 2,461s
+1,8x10^19 + 10^11	| 2.255.482.326	| 2,91s | 2,747s | 2,586s
 
 This is the fastest implementation of the sieve of Eratosthenes on a GPU to the best of my knowledge.
 
@@ -50,26 +50,26 @@ This is the fastest implementation of the sieve of Eratosthenes on a GPU to the 
 Prerequisite
 ============
 
- - NVIDIA graphics card with driver >= 384.81 for V2.1 and >= 398.26 for V2.2
- - works best with compute capabilities 3.7, 5.2 and 6.1 because of available quantities of registers and shared memory
- - a 64-bit host application and non-embedded operating system (Linux, Windows, macOS)
+ - NVIDIA graphics card with driver
  - GPU memory: 1874MB .. 2304MB depending on the range to be sieved
+ - works best with compute capabilities 3.7, 5.2 and 6.1 because of available quantities of registers and shared memory
+ - a 64-bit host application and non-embedded operating system (Linux, Windows)
  
  
 Binary
 ======
-The available binaries have been compiled for 64bit Windows and NVIDIA GPUs with compute capabilities 3.7 and higher. It has been compiled with Microsoft Visual Studio Community 2017 and NVIDIA CUDA Toolkit V9.0 for V2.1 and V9.2 for V2.2.<br/>
-MD5 V2.1 - 294001B4092856F5C09A7DCBB907B340<br/>
-MD5 V2.2 - 4EFCB3C000C2C6ACCE0A8C27C68E274F
+The available binaries have been compiled with Microsoft Visual Studio Community for 64bit Windows and NVIDIA GPUs with compute capability 6.1
 
 
-Version | MS VS |NVIDIA                             | Target | MD5 | Vx.y | Vx.z
-              | Community | CUDA Toolkit | Driver |
------ | ----- | ----------- | -------- | -------- | -------- | --------
-2.1	| 2017	| 9.0 |            | W10 |  294001B4092856F5C09A7DCBB907B340
-2.2	| 2017	| 9.2 |           | W10 | 4EFCB3C000C2C6ACCE0A8C27C68E274F
-2.3	| 2022	| 12.4 |   >= 527.41      | W10, W11 |
 
+
+| Version | MSVS | CUDA ToolKit    | NVIDIA Driver | Target   | MD5      |
+| :-----: | :---: | :----------: | :------: | -------- | -------- | 
+| 2.1	    | 2017	 | 9.0         | >=384.81 | W10      |  294001B4092856F5C09A7DCBB907B340 |
+| 2.2	    | 2017	 | 9.2         | >=398.26 | W10      | 4EFCB3C000C2C6ACCE0A8C27C68E274F  |
+| 2.3    	| 2022	 | 12.4        | >=527.41 | W10, W11 |                                   |
+
+Sieve source code for V2.2 and V2.3 is identical.
 
 
 Usage
