@@ -91,8 +91,8 @@ Examples            | Comment
   LingSieve 0			          | Count the primes from 0 .. 10^11
   LingSieve 0 -s1		        | Count the primes from 0 .. 10^9
   LingSieve 0 -s10		      | Count the primes from 0 .. 10^10
-  LingSieve 1000000		      | Count the primes from 10^15 .. 10^15+10^11
-  LingSieve 100000000 -s1000	| Count the primes from 10^17 .. 10^17+10^12
+  LingSieve 1e15		      | Count the primes from 10^15 .. 10^15+10^11
+  LingSieve 1e17 -s1000	| Count the primes from 10^17 .. 10^17+10^12
   LingSieve /?			        | Display help text
   
   
