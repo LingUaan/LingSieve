@@ -67,7 +67,7 @@ The available binaries have been compiled with Microsoft Visual Studio Community
 | :-----: | :---: | :----------: | :------: | -------- | -------- | 
 | 2.1	    | 2017	 | 9.0         | >=384.81 | W10      |  294001B4092856F5C09A7DCBB907B340 |
 | 2.2	    | 2017	 | 9.2         | >=398.26 | W10      | 4EFCB3C000C2C6ACCE0A8C27C68E274F  |
-| 2.3    	| 2022	 | 12.4        | >=527.41 | W10, W11 |                                   |
+| 2.3    	| 2022	 | 12.4        | >=527.41 | W10, W11 | A62DB3C002BD4CF1BFFAB52A65A344EE  |
 
 Sieve source code for V2.2 and V2.3 is identical.
 
