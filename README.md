@@ -63,6 +63,15 @@ MD5 V2.1 - 294001B4092856F5C09A7DCBB907B340<br/>
 MD5 V2.2 - 4EFCB3C000C2C6ACCE0A8C27C68E274F
 
 
+Version | MS VS |NVIDIA                             | Target | MD5 | Vx.y | Vx.z
+              | Community | CUDA Toolkit | Driver |
+----- | ----- | ----------- | -------- | -------- | -------- | --------
+2.1	| 2017	| 9.0 |            | W10 |  294001B4092856F5C09A7DCBB907B340
+2.2	| 2017	| 9.2 |           | W10 | 4EFCB3C000C2C6ACCE0A8C27C68E274F
+2.3	| 2022	| 12.4 |   >= 527.41      | W10, W11 |
+
+
+
 Usage
 =====
 
