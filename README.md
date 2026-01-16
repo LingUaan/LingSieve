@@ -15,7 +15,7 @@ Key components used to make it really fast:
 
 
 The program LingSieve counts primes and is designed for long duration tests (LDT), to handle large quantities of data, for the generation of large prime tables. That is what GPU computing is all about. It makes no sense to use the GPU for small sieve jobs.
-The granularity is 1.000.000.000 = 10^9 = 1" = 1 cycle, that is the smallest quantity to be sieved. It can be started with multiples of 1", and the sieve width is also in multiples of 1".<br/>
+The granularity is 1.000.000.000 = 10^9 = 1 cycle, that is the smallest quantity to be sieved, the sieve width is also in multiples of 10^9.<br/>
 Sieve range 0 ... 2^64 (1,8446744x10^19).
 
 
