@@ -69,7 +69,7 @@ The available binaries have been compiled with Microsoft Visual Studio Community
 
 
 
-| Year | Version | MSVS | CUDA ToolKit    | Capability | NVIDIA Driver | Target   | MD5      |
+| Year | Version | MSVS | ToolKit    | Capability | NVIDIA Driver | Target   | MD5      |
 | :--: | :-----: | :---: | :----------: | :---------: | :------: | -------- | -------- | 
 | 2018 | 2.1	    | 2017	 | 9.0         | 6.1 | >=384.81 | W10      |  294001B4092856F5C09A7DCBB907B340 |
 | 2022 | 2.2	    | 2017	 | 9.2         | 6.1 | >=398.26 | W10      | 4EFCB3C000C2C6ACCE0A8C27C68E274F  |
