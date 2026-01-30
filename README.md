@@ -63,7 +63,7 @@ Prerequisite
  
 Binary
 ======
-The available binaries have been compiled with Microsoft Visual Studio Community for 64bit Windows and NVIDIA GPUs with compute capability 6.1
+The available binaries have been compiled with Microsoft Visual Studio Community for 64bit Windows and CUDA ToolKit for NVIDIA GPUs with compute capability as indicated in the table.
 
 
 
