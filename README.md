@@ -69,12 +69,13 @@ The available binaries have been compiled with Microsoft Visual Studio Community
 
 
 
-| Year | Version | MSVS | CUDA ToolKit    | NVIDIA Driver | Target   | MD5      |
-| :--: | :-----: | :---: | :----------: | :------: | -------- | -------- | 
-| 2018 | 2.1	    | 2017	 | 9.0         | >=384.81 | W10      |  294001B4092856F5C09A7DCBB907B340 |
-| 2022 | 2.2	    | 2017	 | 9.2         | >=398.26 | W10      | 4EFCB3C000C2C6ACCE0A8C27C68E274F  |
-| 2026 | 2.3    	| 2022	 | 12.4        | >=525.xx | W10, W11 | A62DB3C002BD4CF1BFFAB52A65A344EE  |
-| 2026 | 2.4    	| 2022	 | 12.4        | >=.xx | W10, W11 |   |
+| Year | Version | MSVS | CUDA ToolKit    | Compute | NVIDIA Driver | Target   | MD5      |
+| Year | Version | MSVS | CUDA ToolKit    | Capability | NVIDIA Driver | Target   | MD5      |
+| :--: | :-----: | :---: | :----------: | :---------: | :------: | -------- | -------- | 
+| 2018 | 2.1	    | 2017	 | 9.0         || >=384.81 | W10      |  294001B4092856F5C09A7DCBB907B340 |
+| 2022 | 2.2	    | 2017	 | 9.2         || >=398.26 | W10      | 4EFCB3C000C2C6ACCE0A8C27C68E274F  |
+| 2026 | 2.3    	| 2022	 | 12.4        || >=525.xx | W10, W11 | A62DB3C002BD4CF1BFFAB52A65A344EE  |
+| 2026 | 2.4    	| 2022	 | 12.4        || >=.xx | W10, W11 |   |
 
 Sieve source code for V2.2 ... V2.4 is identical.
 
