@@ -25,7 +25,7 @@ Benchmark and HW Scaling
 
 The GPU HW will scale the program accordingly, there is no need to configure anything.<br/>
 <br/>Measurements V2.1 ... V2.3 taken with a NVIDIA GeForce GTX 1080 (Palit Gamerock)
-<br/> Measurements V2.4 ... taken with a NVIDIA GeForce GTX 5060 Ti (Palit Infinity 3)
+<br/> Measurements V3.0 ... taken with a NVIDIA GeForce GTX 5060 Ti (Palit Infinity 3)
 
 Range | Count | V2.1 | V2.2 | V2.3 | V3.0 | Vx.z
 ----- | ----- | ----------- | -------- | -------- | -------- | --------
