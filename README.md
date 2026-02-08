@@ -27,7 +27,7 @@ The GPU HW will scale the program accordingly, there is no need to configure any
 <br/>Measurements V2.1 ... V2.3 taken with a NVIDIA GeForce GTX 1080 (Palit Gamerock)
 <br/> Measurements V2.4 ... taken with a NVIDIA GeForce GTX 5060 Ti (Palit Infinity 3)
 
-Range | Count | V2.1 | V2.2 | V2.3 | V2.4 | Vx.z
+Range | Count | V2.1 | V2.2 | V2.3 | V3.0 | Vx.z
 ----- | ----- | ----------- | -------- | -------- | -------- | --------
 0 … 10^11	| 4.118.054.813	| 0,60s | 0,577s | 0,564s      | 0,225s
 0 … 10^12	| 37.607.912.018	| 8,31s | 7,32s | 5,91s      | 2,993s
@@ -74,9 +74,9 @@ The available binaries have been compiled with Microsoft Visual Studio Community
 | 2018 | 2.1	    | 2017	 | 9.0         | 6.1 | >=384.81 | W10      |  294001B4092856F5C09A7DCBB907B340 |
 | 2022 | 2.2	    | 2017	 | 9.2         | 6.1 | >=398.26 | W10      | 4EFCB3C000C2C6ACCE0A8C27C68E274F  |
 | 2026 | 2.3    	| 2022	 | 12.4        | 6.1 | >=525.xx | W10, W11 | A62DB3C002BD4CF1BFFAB52A65A344EE  |
-| 2026 | 2.4    	| 2022	 | 12.9        | 6.1 & 12.0 | >=.xx | W10, W11 |   |
+| 2026 | 3.0    	| 2022	 | 12.9        | 7.5 & 12.0 | >=.xx | W10, W11 |   |
 
-Sieve source code for V2.2 ... V2.4 is identical.
+Sieve source code for V2.2 ... V2.3 is identical.
 
 
 Usage
