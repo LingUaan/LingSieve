@@ -91,7 +91,7 @@ Usage
 
   
   
-Examples V3.0+      | Comment
+Examples      | Comment
 ------------------- | --------
   LingSieve -verbose -bench		| to get on overview of the capabilities of your graphics card
   LingSieve				             | Start LDT from 0 or from the last entry of file Result.txt if there is any
