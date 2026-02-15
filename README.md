@@ -91,16 +91,16 @@ Usage
 
   
   
-Examples V3.0+      | up to V2.3 | Comment
-------------------- | ---------- | --------
-  LingSieve -verbose -bench		|| to get on overview of the capabilities of your graphics card
-  LingSieve				             || Start LDT from 0 or from the last entry of file Result.txt if there is any
-  LingSieve 0			          || Count the primes from 0 .. 10^11
-  LingSieve 0 -s1		        || Count the primes from 0 .. 10^9
-  LingSieve 0 -s10		      || Count the primes from 0 .. 10^10
-  LingSieve 1e15		      | 1000000 | Count the primes from 10^15 .. 10^15+10^11
-  LingSieve 1e17 -s1000	| 10000000 -s1000| Count the primes from 10^17 .. 10^17+10^12
-  LingSieve /?			        || Display help text
+Examples V3.0+      | Comment
+------------------- | --------
+  LingSieve -verbose -bench		| to get on overview of the capabilities of your graphics card
+  LingSieve				             | Start LDT from 0 or from the last entry of file Result.txt if there is any
+  LingSieve 0			          | Count the primes from 0 .. 10^11
+  LingSieve 0 -s1		        | Count the primes from 0 .. 10^9
+  LingSieve 0 -s10		      | Count the primes from 0 .. 10^10
+  LingSieve 1e15		      | Count the primes from 10^15 .. 10^15+10^11
+  LingSieve 1e17 -s1000	| Count the primes from 10^17 .. 10^17+10^12
+  LingSieve /?			        | Display help text
   
   
   
