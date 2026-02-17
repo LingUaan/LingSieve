@@ -76,7 +76,7 @@ The available binaries have been compiled with Microsoft Visual Studio Community
 | 2026 | 2.3    	| 2022	 | 12.4        | 6.1 | >=525.xx | W10, W11 | A62DB3C002BD4CF1BFFAB52A65A344EE  |
 | 2026 | 3.0    	| 2022	 | 12.9        | 7.5 & 12.0 | >=575.xx | W10, W11 |   |
 
-Sieve source code for V2.2 ... V3.0 is identical.
+Sieve source code for V2.2 ... V3.0 is identical. Only program and CUDA parameter and tool sets were changed.
 
 
 Usage
