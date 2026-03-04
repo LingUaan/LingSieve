@@ -1,4 +1,9 @@
 # LingSieve
+
+
+[![Download](https://img.shields.io/badge/release-V3.0-blue?style=flat-square)](https://github.com/LingUaan/LingSieve/releases)
+
+
 CUDA (GPU) implementation of the sieve of Eratosthenes.
 
 
