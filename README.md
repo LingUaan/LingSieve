@@ -80,7 +80,7 @@ The available binaries have been compiled with Microsoft Visual Studio Community
 | 2022 | 2.2	    | 2017	 | 9.2         | 6.1 | >=398.26 | W10      | 4EFCB3C000C2C6ACCE0A8C27C68E274F  |
 | 2026 | 2.3    	| 2022	 | 12.4        | 6.1 | >=525.xx | W1x | A62DB3C002BD4CF1BFFAB52A65A344EE  |
 | 2026 | 3.0    	| 2022	 | 12.9        | 7.5&12.0 | >=575.xx | W1x | E5F9A9A364BD51C4D1FA7761FBA3A259  |
-| 2026 | 3.1    	| 2022	 | 12.9        | 7.5&12.0 | >=575.xx | W1x |   |
+| 2026 | 3.1    	| 2022	 | 12.9        | 7.5&12.0 | >=575.xx | W1x | F15C7104EC085F17AA82B0979AB64544  |
 
 Sieve source code for V2.2 ... V3.0 is identical. Only program and CUDA parameter and tool sets were changed.
 
