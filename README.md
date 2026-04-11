@@ -38,10 +38,7 @@ Range | Count | V2.1 | V2.2 | V2.3 | V3.0 | V3.1 | V3.2 |
 0 … 10^12	| 37.607.912.018	| 8,31s | 7,32s | 5,91s      | 2,993s    | 2,643s | 2,390s
 0 … 10^13	| 346.065.536.839	| 103s | 87,2s |75,9s    | 36,2s        | 33,1s  | 30,8s
 0 … 10^14	| 3.204.941.750.802	|  1231s| 1019s | 952s   | 439s       | 408s   | 370,9s
-
-
-Range | Count | V2.1 | V2.2 | V2.3 | V3.0 | V3.1 | V3.2 |
------ | ----- | ----------- | -------- | -------- | -------- | -------- | ------ |
+ |  |  |  |  |  |  |  |
 0 … 10^11	| 4.118.054.813	| 0,60s | 0,577s | 0,564s      | 225ms   | 195ms | 161ms
 10^12 + 10^11	| 3.612.791.400	| 0,90s | 0,795s | 0,707s   | 303ms  | 293ms | 280ms
 10^13 + 10^11	| 3.340.141.707	| 1,08s | 0,919s | 0,815s    | 376ms | 357ms | 332ms
@@ -85,10 +82,10 @@ The available binaries have been compiled with Microsoft Visual Studio Community
 | 2022 | 2.2	    | 2017	 | 9.2         | 6.1 | >=398.26 | W10      | 4EFCB3C000C2C6ACCE0A8C27C68E274F  |
 | 2026 | 2.3    	| 2022	 | 12.4        | 6.1 | >=525.xx | W1x | A62DB3C002BD4CF1BFFAB52A65A344EE  |
 | 2026 | 3.0    	| 2022	 | 12.9        | 7.5&12.0 | >=575.xx | W1x | E5F9A9A364BD51C4D1FA7761FBA3A259  |
-| 2026 | 3.1    	| 2022	 | 12.9        | 7.5&12.0 | >=575.xx | W1x | F15C7104EC085F17AA82B0979AB64544  |
+| 2026 | 3.1    	| 2022	 | 12.9        | 7.5&12.0 | >=575.xx | W1x | 74494FB3BA629F488A926A7F798928C3  |
 | 2026 | 3.2    	| 2022	 | 12.9        | 7.5&12.0 | >=575.xx | W1x |   |
 
-Sieve source code for V2.2 ... V3.2 is identical. Only program and CUDA parameter and tool sets were changed.
+Sieve source code for V2.2 ... V3.2 is identical. Only program and CUDA parameters and tool sets were modified.
 
 
 Usage
