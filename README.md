@@ -102,12 +102,12 @@ Usage
 Examples            | Comment | Count |
 ------------------- | -------- | -----: |
   PrimeSieveGPU -verbose -bench	| to get on overview of your graphics card | -
+  PrimeSieveGPU /?			        | Display help text | -
   PrimeSieveGPU 0		         | Count from 0 ... 10^11 | 4.118.054.813
   PrimeSieveGPU 0 -d=1e9	    | Count from 0 ... 10^9 |50.847.534
   PrimeSieveGPU 0 -d=1e10	   | Count from 0 ... 10^10 | 455.052.511
   PrimeSieveGPU 1e15	-d=1e11 | Count from 10^15 ... 10^15+10^11 | 2.895.317.534
   PrimeSieveGPU 1e17 -d=1e12	| Count from 10^17 ... 10^17+10^12 |25.546.659.722
-  PrimeSieveGPU /?			        | Display help text | -
    |	| |
   PrimeSieveGPU  100 -d=48	| Count from 100 ... 148   | 9
   PrimeSieveGPU  1e17 -d=2048	| Count from 1e17 ... 1e17+2048   | 55
