@@ -1,7 +1,7 @@
 # LingSieve
 
 
-[![Download](https://img.shields.io/badge/release-V3.0-success?style=plastic)](https://github.com/LingUaan/LingSieve/releases)
+[![Download](https://img.shields.io/badge/release-V3.1-success?style=plastic)](https://github.com/LingUaan/LingSieve/releases)
 
 
 CUDA (GPU) implementation of the sieve of Eratosthenes.
@@ -104,10 +104,10 @@ Examples            | Comment
   PrimeSieveGPU -verbose -bench		| to get on overview of the capabilities of your graphics card
   PrimeSieveGPU				             | Start LDT from 0 or from the last entry of file Result.txt if there is any
   PrimeSieveGPU 0			          | Count the primes from 0 .. 10^11
-  PrimeSieveGPU 0 -s1		        | Count the primes from 0 .. 10^9
-  PrimeSieveGPU 0 -s10		      | Count the primes from 0 .. 10^10
+  PrimeSieveGPU 0 -s1	(≙ -d=1e9)	        | Count the primes from 0 .. 10^9
+  PrimeSieveGPU 0 -s10	(≙ -d=1e10)	      | Count the primes from 0 .. 10^10
   PrimeSieveGPU 1e15		      | Count the primes from 10^15 .. 10^15+10^11
-  PrimeSieveGPU 1e17 -s1000	| Count the primes from 10^17 .. 10^17+10^12
+  PrimeSieveGPU 1e17 -s1000 (≙ -d=1e12)	| Count the primes from 10^17 .. 10^17+10^12
   PrimeSieveGPU /?			        | Display help text
   
   
