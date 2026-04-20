@@ -99,19 +99,21 @@ Usage
 
   
   
-Examples            | ≙ Alternativ  | Comment
-------------------- | - | --------
-  PrimeSieveGPU -verbose -bench	|    	| to get on overview of the capabilities of your graphics card
-  PrimeSieveGPU				         | -d=1e11 | Start LDT from 0 or from the last entry of file Result.txt if there is any
-  PrimeSieveGPU 0		         |	0 -d=1e11    | Count the primes from 0 .. 10^11
-  PrimeSieveGPU 0 -s1	      | 0 -d=1e9	    | Count the primes from 0 .. 10^9
-  PrimeSieveGPU 0 -s10	     | 0 -d=1e10	   | Count the primes from 0 .. 10^10
-  PrimeSieveGPU 1e15		      | 1e15 -d=1e12 | Count the primes from 10^15 .. 10^15+10^11
-  PrimeSieveGPU 1e17 -s1000 | 1e17 -d=1e12	| Count the primes from 10^17 .. 10^17+10^12
+Examples            | ≙ Alternativ  | Comment | Count |
+------------------- | ------------- | -------- | -----: |
+  PrimeSieveGPU -verbose -bench	|    	| to get on overview of the capabilities of your graphics card |
+  PrimeSieveGPU				         | -d=1e11 | Start LDT from 0 or from the last entry of file Result.txt | 4.118.054.813
+  PrimeSieveGPU 0		         |	0 -d=1e11    | Count the primes from 0 ... 10^11 | 4.118.054.813
+  ||||
+  PrimeSieveGPU 0 -s1	      | 0 -d=1e9	    | Count the primes from 0 ... 10^9 |50.847.534
+  PrimeSieveGPU 0 -s10	     | 0 -d=1e10	   | Count the primes from 0 ... 10^10 | 455.052.511
+  PrimeSieveGPU 1e15		      | 1e15 -d=1e11 | Count the primes from 10^15 ... 10^15+10^11 | 2.895.317.534
+  PrimeSieveGPU 1e17 -s1000 | 1e17 -d=1e12	| Count the primes from 10^17 ... 10^17+10^12 |25.546.659.722
   PrimeSieveGPU /?			       | Display help text
-   |	| 
-  PrimeSieveGPU 100 -d=48 | 100 -d=48	| Count the primes from 100 .. 148 to find 9 primes  
-  
+   |	| |
+  PrimeSieveGPU  | 100 -d=48	| Count the primes from 100 ... 148   | 9
+  PrimeSieveGPU  | 1e17 -d=2048	| Count the primes from 1e17 ... 1e17+2048   | 55
+  PrimeSieveGPU | 1e17+123 -d=1e4	| Count the primes from 1e17+123 ... 1e17+1e4+123   | 265
   
   Status
   ======
