@@ -99,7 +99,7 @@ Usage
 
   
   
-Examples            | Alternativ ≙ | Comment
+Examples            | ≙ Alternativ  | Comment
 ------------------- | - | --------
   PrimeSieveGPU -verbose -bench	|    	| to get on overview of the capabilities of your graphics card
   PrimeSieveGPU				         | -d=1e11 | Start LDT from 0 or from the last entry of file Result.txt if there is any
