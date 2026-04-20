@@ -19,8 +19,7 @@ Key components used to make it really fast:
 
 
 
-The program LingSieve counts primes and is designed for long duration tests (LDT), to handle large quantities of data, for the generation of large prime tables. That is what GPU computing is all about. It makes no sense to use the GPU for small sieve jobs.
-The granularity is 1.000.000.000 = 10^9 = 1 cycle, that is the smallest quantity to be sieved - with option -s1.<br/>
+The program PrimeSieveGPU counts primes and is designed for long duration tests (LDT), to handle large quantities of data, for the generation of large prime tables. That is what GPU computing is all about. As of V3.2 small sieve jobs can be launched, e.g. PrimeSieveGPU 100 -d=48 - to sieve from 100 ... 148 and find 9 primes.
 Sieve range 0 ... 2^64 (1,8446744x10^19).
 
 
@@ -34,23 +33,23 @@ The GPU HW will scale the program accordingly, there is no need to configure any
 
 Range | Count | V2.1 | V2.2 | V2.3 | V3.0 | V3.1 | V3.2 |
 ----- | ----- | ----------- | -------- | -------- | -------- | -------- | ------ |
-0 … 10^11	| 4.118.054.813	| 0,60s | 0,577s | 0,564s      | 0,225s   | 0,195s | 0,161s
+0 … 10^11	| 4.118.054.813	| 0,60s | 0,577s | 0,564s      | 0,225s   | 0,195s | 0,160s
 0 … 10^12	| 37.607.912.018	| 8,31s | 7,32s | 5,91s      | 2,993s    | 2,643s | 2,368s
 0 … 10^13	| 346.065.536.839	| 103s | 87,2s |75,9s    | 36,2s        | 33,1s  | 30,3s
 0 … 10^14	| 3.204.941.750.802	|  1231s| 1019s | 952s   | 439s       | 408s   | 368s
  |  |  |  |  |  |  |  |
-0 … 10^11	| 4.118.054.813	| 0,60s | 0,577s | 0,564s      | 225ms   | 195ms | 161ms
-10^12 + 10^11	| 3.612.791.400	| 0,90s | 0,795s | 0,707s   | 303ms  | 293ms | 280ms
-10^13 + 10^11	| 3.340.141.707	| 1,08s | 0,919s | 0,815s    | 376ms | 357ms | 332ms
-10^14 + 10^11	| 3.102.063.927	| 1,26s | 1,057s | 1,002s   | 469ms  | 439ms | 401ms
-10^15 + 10^11	| 2.895.317.534	| 1,44s | 1,235s | 1,186s    | 553ms | 522ms | 476ms
-10^16 + 10^11	| 2.714.336.584	| 1,62s | 1,494s | 1,365s   | 642ms  | 610ms | 558ms
-10^17 + 10^11	| 2.554.712.095	| 1,81s | 1,664s | 1,548s   | 732ms  | 702ms | 648ms
-10^18 + 10^11	| 2.412.731.214	| 2,08s | 1,912s | 1,790s   | 827ms  | 794ms | 746ms
-4x10^18 + 10^11	| 2.334.654.194	| 2,34s | 2,166s  | 2,056s| 895ms  | 865ms | 817ms
-10^19 + 10^11	| 2.285.693.139	| 2,64s | 2,518s | 2,326s   | 989ms  | 942ms | 898ms
-1,4x10^19 + 10^11	| 2.268.304.926	| 2,81s | 2,646s | 2,461s| 1032ms | 984ms | 943ms
-1,8x10^19 + 10^11	| 2.255.482.326	| 2,91s | 2,747s | 2,586s| 1073ms | 1027ms | 990ms
+0 … 10^11	| 4.118.054.813	| 0,60s | 0,577s | 0,564s      | 225ms   | 195ms | 160ms
+10^12 + 10^11	| 3.612.791.400	| 0,90s | 0,795s | 0,707s   | 303ms  | 293ms | 273ms
+10^13 + 10^11	| 3.340.141.707	| 1,08s | 0,919s | 0,815s    | 376ms | 357ms | 326ms
+10^14 + 10^11	| 3.102.063.927	| 1,26s | 1,057s | 1,002s   | 469ms  | 439ms | 397ms
+10^15 + 10^11	| 2.895.317.534	| 1,44s | 1,235s | 1,186s    | 553ms | 522ms | 472ms
+10^16 + 10^11	| 2.714.336.584	| 1,62s | 1,494s | 1,365s   | 642ms  | 610ms | 554ms
+10^17 + 10^11	| 2.554.712.095	| 1,81s | 1,664s | 1,548s   | 732ms  | 702ms | 644ms
+10^18 + 10^11	| 2.412.731.214	| 2,08s | 1,912s | 1,790s   | 827ms  | 794ms | 742ms
+4x10^18 + 10^11	| 2.334.654.194	| 2,34s | 2,166s  | 2,056s| 895ms  | 865ms | 814ms
+10^19 + 10^11	| 2.285.693.139	| 2,64s | 2,518s | 2,326s   | 989ms  | 942ms | 895ms
+1,4x10^19 + 10^11	| 2.268.304.926	| 2,81s | 2,646s | 2,461s| 1032ms | 984ms | 939ms
+1,8x10^19 + 10^11	| 2.255.482.326	| 2,91s | 2,747s | 2,586s| 1073ms | 1027ms | 986ms
 
 
 
@@ -102,14 +101,14 @@ Usage
   
 Examples            | Comment
 ------------------- | --------
-  LingSieve -verbose -bench		| to get on overview of the capabilities of your graphics card
-  LingSieve				             | Start LDT from 0 or from the last entry of file Result.txt if there is any
-  LingSieve 0			          | Count the primes from 0 .. 10^11
-  LingSieve 0 -s1		        | Count the primes from 0 .. 10^9
-  LingSieve 0 -s10		      | Count the primes from 0 .. 10^10
-  LingSieve 1e15		      | Count the primes from 10^15 .. 10^15+10^11
-  LingSieve 1e17 -s1000	| Count the primes from 10^17 .. 10^17+10^12
-  LingSieve /?			        | Display help text
+  PrimeSieveGPU -verbose -bench		| to get on overview of the capabilities of your graphics card
+  PrimeSieveGPU				             | Start LDT from 0 or from the last entry of file Result.txt if there is any
+  PrimeSieveGPU 0			          | Count the primes from 0 .. 10^11
+  PrimeSieveGPU 0 -s1		        | Count the primes from 0 .. 10^9
+  PrimeSieveGPU 0 -s10		      | Count the primes from 0 .. 10^10
+  PrimeSieveGPU 1e15		      | Count the primes from 10^15 .. 10^15+10^11
+  PrimeSieveGPU 1e17 -s1000	| Count the primes from 10^17 .. 10^17+10^12
+  PrimeSieveGPU /?			        | Display help text
   
   
   
