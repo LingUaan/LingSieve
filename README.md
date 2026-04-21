@@ -101,8 +101,8 @@ Usage
   
 Examples            | Comment | Count |
 ------------------- | -------- | -----: |
-  LingSieve -verbose 	| your graphics cards parameter | -
-  LingSieve -bench	| your graphics cards performance | -
+  LingSieve -verbose 	| get your graphics cards parameter | -
+  LingSieve -bench	| get your graphics cards performance | -
   LingSieve /?			        | Display help text | -
   LingSieve 0		         | Count from 0 ... 10^11 | 4.118.054.813
   LingSieve 0 -d=1e9	    | Count from 0 ... 10^9 |50.847.534
