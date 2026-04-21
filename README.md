@@ -90,7 +90,7 @@ Sieve source code for V2.2 ... V3.2 is identical. Only program and CUDA paramete
 Usage
 =====
 
-  Open a Command Prompt and run the program PrimeSieveGPU:
+  Open a Command Prompt and run the program LingSieve:
   
   1) start without parameter - it will use initial values - StartValue (0), segment size (10^11) and start a LDT
   2) if there is a valid Result file it will use the last entry as StartValue, segment size (10^11) and start a LDT
