@@ -19,7 +19,7 @@ Key components used to make it really fast:
 
 
 
-The program LingSieve counts primes and is designed for long duration tests (LDT), to handle large quantities of data, for the generation of large prime tables. That is what GPU computing is all about. As of V3.2 small sieve jobs can be launched, e.g. PrimeSieveGPU 100 -d=48 - to sieve from 100 ... 148 and find 9 primes.
+The program LingSieve counts primes and is designed for long duration tests (LDT), to handle large quantities of data, for the generation of large prime tables. That is what GPU computing is all about. As of V3.2 small sieve jobs can be launched, e.g. LingSieve 100 -d=48 - to sieve from 100 ... 148 and find 9 primes.
 Sieve range 0 ... 2^64 (1,8446744x10^19).
 
 
