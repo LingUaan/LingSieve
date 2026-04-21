@@ -101,7 +101,7 @@ Usage
 
   
   
-Examples            | Comment | Count |
+Examples >= V3.2           | Comment | Count |
 ------------------- | -------- | -----: |
   LingSieve -verbose 	| get your graphics cards parameter | -
   LingSieve -bench	| get your graphics cards performance | -
