@@ -71,20 +71,20 @@ Prerequisite
  
 Binary
 ======
-The available binaries have been compiled with Microsoft Visual Studio Community for 64bit Windows and CUDA ToolKit for NVIDIA GPUs with compute capability as indicated in the table.
+The available binaries have been compiled with Microsoft Visual Studio Community for 64bit Windows and CUDA ToolKit for NVIDIA GPUs with compute capability (CC) as indicated in the table.
 
 
 
 
 
-| Year | V | MSVS | ToolKit    | Capability |  Driver | Target   | MD5      |
+| Year | V | MSVS | ToolKit    | CC |  Driver | Target   | MD5      |
 | :--: | :---: | :---: | :----------: | :---------: | :------: | -------- | -------- | 
 | 2018 | 2.1	    | 2017	 | 9.0         | 6.1 | >=384.81 | W10      |  294001B4092856F5C09A7DCBB907B340 |
 | 2022 | 2.2	    | 2017	 | 9.2         | 6.1 | >=398.26 | W10      | 4EFCB3C000C2C6ACCE0A8C27C68E274F  |
 | 2026 | 2.3    	| 2022	 | 12.4        | 6.1 | >=525.xx | W1x | A62DB3C002BD4CF1BFFAB52A65A344EE  |
 | 2026 | 3.0    	| 2022	 | 12.9        | 7.5&12.0 | >=575.xx | W1x | E5F9A9A364BD51C4D1FA7761FBA3A259  |
 | 2026 | 3.1    	| 2022	 | 12.9        | 7.5&12.0 | >=575.xx | W1x | 74494FB3BA629F488A926A7F798928C3  |
-| 2026 | 3.2    	| 2022	 | 12.9        | 7.5&12.0 | >=575.xx | W1x |   |
+| 2026 | 3.2    	| 2022	 | 12.9        | 7.5&12.0 | >=575.xx | W1x | 5D7FABB5E2369BD6F43AF79DEC7D4A0B  |
 
 Sieve source code for V2.2 ... V3.2 is identical. Only program and CUDA parameters and tool sets were modified.
 
