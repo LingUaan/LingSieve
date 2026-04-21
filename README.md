@@ -16,11 +16,13 @@ Key components used to make it really fast:
  - reuse all data structures again and again - no malloc, no free hence no memory leaks and init time can be neglected
  - no bulk data transfer between CPU and GPU, only the sieve result will be transfered from GPU to CPU
  - different sieving method for very small, small, medium, large and very large numbers
+ - internal granularity is 10^9, subsets of it will be dealt with by the counting module 
+ - Sieve range 0 ... 2^64 (1,8446744x10^19)
 
 
 
-The program LingSieve counts primes and is designed for long duration tests (LDT), to handle large quantities of data, for the generation of large prime tables. That is what GPU computing is all about. As of V3.2 small sieve jobs can be launched, e.g. LingSieve 100 -d=48 - to sieve from 100 ... 148 and find 9 primes.
-Sieve range 0 ... 2^64 (1,8446744x10^19).
+The program LingSieve counts primes and is designed for long duration tests (LDT), to handle large quantities of data, for the generation of large prime tables. That is what GPU computing is all about.<br/>
+As of V3.2 small sieve jobs can be launched as well, e.g. LingSieve 100 -d=48 - to sieve from 100 ... 148 and find 9 primes.<br/>
 
 
  
