@@ -94,14 +94,15 @@ Usage
   
   1) start without parameter - it will use initial values - StartValue (0), segment size (10^11) and start a LDT
   2) if there is a valid Result file it will use the last entry as StartValue, segment size (10^11) and start a LDT
-  3) if there is a user input it will use it instead of 1) or 2)
+  3) if there is a valid user input it will use it instead of 1) or 2)
 
 
   
   
 Examples            | Comment | Count |
 ------------------- | -------- | -----: |
-  LingSieve -verbose -bench	| to get on overview of your graphics card | -
+  LingSieve -verbose 	| your graphics cards parameter | -
+  LingSieve -bench	| your graphics cards performance | -
   LingSieve /?			        | Display help text | -
   LingSieve 0		         | Count from 0 ... 10^11 | 4.118.054.813
   LingSieve 0 -d=1e9	    | Count from 0 ... 10^9 |50.847.534
