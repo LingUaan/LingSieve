@@ -65,7 +65,7 @@ Prerequisite
 ============
 
  - NVIDIA graphics card with driver
- - GPU memory: 1874MB .. 2304MB depending on the range to be sieved
+ - GPU memory: 1346MB .. 1926MB depending on the range to be sieved
  - a 64-bit host application and non-embedded operating system (Linux, Windows)
  
  
