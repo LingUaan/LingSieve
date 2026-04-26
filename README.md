@@ -103,7 +103,7 @@ Usage
   
 Examples ≥ V3.2           | Comment | Count |
 ------------------- | -------- | -----: |
-  LingSieve -verbose 	| get your graphics cards parameter | -
+  LingSieve -GPU 	| get your graphics cards parameter | -
   LingSieve -bench	| get your graphics cards performance | -
   LingSieve /?			        | Display help text | -
   LingSieve 0		         | Count from 0 ... 10^11 | 4.118.054.813
